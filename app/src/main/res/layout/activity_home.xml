@@ -39,17 +39,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:text="Location"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/location"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:textStyle="bold"/>
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
@@ -64,15 +61,13 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="Date"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/date"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:textStyle="bold"/>
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
@@ -80,6 +75,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:text="Prayer Timings"/>
 
@@ -93,7 +89,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:text="@string/fajr"
                     android:textStyle="bold"/>
 
@@ -101,10 +96,7 @@
                     android:id="@+id/fajr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:tag="@string/fajr"
-                    android:textStyle="bold"/>
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
@@ -117,7 +109,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:text="@string/dhuhr"
                     android:textStyle="bold"/>
 
@@ -125,10 +116,7 @@
                     android:id="@+id/dhuhr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:tag="@string/dhuhr"
-                    android:textStyle="bold"/>
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -140,7 +128,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:text="@string/asr"
                     android:textStyle="bold"/>
 
@@ -148,10 +135,7 @@
                     android:id="@+id/asr"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:tag="@string/asr"
-                    android:textStyle="bold"/>
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -163,7 +147,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:text="@string/maghrib"
                     android:textStyle="bold"/>
 
@@ -171,10 +154,7 @@
                     android:id="@+id/maghrib"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:tag="@string/maghrib"
-                    android:textStyle="bold"/>
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -186,7 +166,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:text="Isha"
                     android:textStyle="bold"/>
 
@@ -194,10 +173,7 @@
                     android:id="@+id/isha"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="end"
-                    android:tag="Isha"
-                    android:textStyle="bold"/>
+                    android:layout_weight="1" />
             </LinearLayout>
 
         </LinearLayout>

@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
                             String country = response.get("country").toString();
                             String state = response.get("state").toString();
                             String city = response.get("city").toString();
-                            String Location = city +","+state+","+country;
+                            String Location = city +", "+state+", "+country;
 
                             String Date = response.getJSONArray("items").getJSONObject(0).get("date_for").toString();
 
