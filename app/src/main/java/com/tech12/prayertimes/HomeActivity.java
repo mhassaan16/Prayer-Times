@@ -114,7 +114,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 VolleyLog.d(TAG, "Error: " + error.getMessage());
-                Toast.makeText(HomeActivity.this, "Error", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomeActivity.this, "Please check your internet connection", Toast.LENGTH_SHORT).show();
                 // hide the progress dialog
                 pDialog.hide();
             }
