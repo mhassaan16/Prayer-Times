@@ -3,6 +3,9 @@
     <string name="title_activity_login">Login</string>
     <string name="title_activity_signup">Signup</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -157,4 +160,7 @@
 
     <string name="secret_google_maps_api_key"></string>
     <string name="duas">Duas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
