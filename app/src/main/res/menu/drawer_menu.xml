@@ -9,6 +9,24 @@
             android:icon="@drawable/dua"
             android:title="Duas" />
 
+        <item
+            android:id="@+id/qibla"
+            android:icon="@drawable/dua"
+            android:title="Find Qibla" />
+
+
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/dua"
+            android:title="Rate Our App" />
+
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/dua"
+            android:title="Logout" />
+
+
     </group>
 
 

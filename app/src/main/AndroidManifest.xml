@@ -24,7 +24,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".DuasActivity"></activity>
     </application>
 
 </manifest>
