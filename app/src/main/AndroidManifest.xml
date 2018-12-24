@@ -23,6 +23,7 @@
             android:name=".Login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HomeActivity"
+            android:label="Home"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 

@@ -133,5 +133,12 @@ public class HomeFragment extends Fragment {
         AppController.getInstance().addToRequestQueue(jsonObjReq, tag_json_obj);
 
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        // Set title
+        ((HomeActivity) getActivity()).setActionBarTitle("Home");
+    }
 }
 
