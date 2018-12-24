@@ -2,8 +2,10 @@ package com.tech12.prayertimes;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -46,6 +48,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public void setActionBarTitle(String title){
         getSupportActionBar().setTitle(title);
     }
+    public void rateMe() {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("market://details?id=" + "com.android.chrome")));
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("http://play.google.com/store/apps/details?id=" + getPackageName())));
+        }
+    }
 
 
     @Override
@@ -60,7 +71,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         new QiblaFragment()).addToBackStack(null).commit();
                 break;
             case R.id.rate:
-                Toast.makeText(this, "Rate Our App Clicked", Toast.LENGTH_SHORT).show();
+                rateMe();
                 break;
             case R.id.logout:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
