@@ -11,19 +11,19 @@
 
         <item
             android:id="@+id/qibla"
-            android:icon="@drawable/dua"
+            android:icon="@drawable/find"
             android:title="Find Qibla" />
 
 
         <item
             android:id="@+id/rate"
-            android:icon="@drawable/dua"
+            android:icon="@drawable/rate"
             android:title="Rate Our App" />
 
 
         <item
             android:id="@+id/logout"
-            android:icon="@drawable/dua"
+            android:icon="@drawable/logout"
             android:title="Logout" />
 
 

@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("Sign Up");
+
         db = new DatabaseHandler(this);
         e1=(EditText) findViewById(R.id.username);
         e2=(EditText) findViewById(R.id.pass);
