@@ -1,64 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
     tools:context=".Login">
 
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_username"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="42dp"
-        android:text="Login"
-        android:textSize="18sp"
-        android:textColor="@color/green"/>
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="123dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
 
-    <EditText
-        android:id="@+id/pass"
-        android:layout_width="wrap_content"
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_pass"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="206dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
 
     <Button
         android:id="@+id/login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="217dp"
-        android:text="Login"
+        android:layout_marginTop="24dp"
         android:background="@drawable/roundedbutton"
-        android:textColor="@color/white"/>
+        android:text="Login"
+        android:textColor="@color/white" />
 
-    <TextView
+    <Button
         android:id="@+id/reg"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="175dp"
-        android:text="Haven't Registered yet? Click Here!"
-        android:textColor="@color/green"/>
-</RelativeLayout>
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Haven't Registered yet? Click Here"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
