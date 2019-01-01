@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,7 +45,7 @@ public class HomeFragment extends Fragment {
 
     TextView fajr, dhuhr, asr, maghrib, isha, location, date;
     EditText search_et;
-    Button search_btn;
+    ImageView search_btn;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -59,9 +60,9 @@ public class HomeFragment extends Fragment {
         location = (TextView) view.findViewById(R.id.location);
         date = (TextView) view.findViewById(R.id.date);
         search_et = (EditText) view.findViewById(R.id.search);
-        search_btn = (Button) view.findViewById(R.id.search_btn);
+        search_btn = (ImageView) view.findViewById(R.id.search_btn);
 
-        search_btn.setOnClickListener(new View.OnClickListener() {
+       search_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String myLocation = search_et.getText().toString().trim();
