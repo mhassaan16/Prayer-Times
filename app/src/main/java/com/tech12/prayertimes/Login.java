@@ -39,6 +39,10 @@ public class Login extends AppCompatActivity {
                 if(userExists==true)
                 {
                     Toast.makeText(getApplicationContext(),"Login Successful!",Toast.LENGTH_SHORT).show();
+                    //session handling
+                    User user=new User(Login.this);
+                    user.setName(s1);
+                    //
                     Intent intent=new Intent(getApplicationContext(),HomeActivity.class);
                     startActivity(intent);
                     Login.this.finish();

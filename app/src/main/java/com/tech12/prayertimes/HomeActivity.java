@@ -74,27 +74,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 rateMe();
                 break;
             case R.id.logout:
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("ALERT");
-                builder.setMessage("Are you sure you want to logout?");
-                builder.setCancelable(false);
-                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(),Login.class);
-                        startActivity(intent);
-                    }
-                });
+                new User(HomeActivity.this).removeUser();
+                Intent intent=new Intent(HomeActivity.this,Login.class);
+                startActivity(intent);
+                finish();
 
-                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                });
-
-                builder.show();
-                break;
         }
 
         drawer.closeDrawer(GravityCompat.START);
